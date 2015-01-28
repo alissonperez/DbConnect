@@ -1,0 +1,24 @@
+{
+  "prod": {
+    "kermit": {
+      "master": ["1.2.3.4",3306,"user_ro","pass"],
+      "slave": [ "1.2.3.4",3307,"user_ro","pass" ]
+    }
+  },
+  "dev": {
+    "default": {
+      "master": ["1.2.3.5",3306,"user","pass"],
+      "slave": ["1.2.3.5",3306,"user","pass"]
+    },
+    "fozzie": {
+      "master": ["1.2.3.4",3307,"user","pass"]
+    },
+    "beaker": {
+      "master": ["1.2.3.5",3306,"user","pass"],
+      "db": "dev_beaker_admin"
+    },
+    "gonzo": {
+      "master": ["1.2.3.4",3306,"user","pass"]
+    },
+  }
+}
